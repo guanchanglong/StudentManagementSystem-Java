@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.oneDiv{
+    margin: 10px;
+    width: 52px;
+    height: 32px;
+    float: left;
+}
+
+#modal{
+    margin-top: 80px;
+}
+
+#seat{
+    width: 600px;
+    /*height: 900px;*/
+}
+
+#screen img{
+    margin-left: 200px;
+}
+
+#screen p{
+    margin-left: 260px;
+    font-size: 18px;
+    color: #8fa1c7;
+}
+
+.active{
+    padding-left: 2px;
+}
+
+

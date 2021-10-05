@@ -1,0 +1,5 @@
+spring:
+  thymeleaf:
+    mode: UTF-8
+  profiles:
+    active: dev

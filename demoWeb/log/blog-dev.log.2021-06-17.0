@@ -1,0 +1,159 @@
+2021-06-17 15:14:59.626  INFO 11988 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 11988 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-17 15:14:59.632 DEBUG 11988 --- [main] com.xupt.demo.DemoApplication            : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-06-17 15:14:59.632  INFO 11988 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-17 15:15:01.255  INFO 11988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-17 15:15:01.333  INFO 11988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 7 JPA repository interfaces.
+2021-06-17 15:15:02.169  INFO 11988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-17 15:15:02.178  INFO 11988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-17 15:15:02.178  INFO 11988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-17 15:15:02.449  INFO 11988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-17 15:15:02.450  INFO 11988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2766 ms
+2021-06-17 15:15:02.697  INFO 11988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-17 15:15:02.802  INFO 11988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-17 15:15:03.138  INFO 11988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-17 15:15:03.270  INFO 11988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-17 15:15:03.763  INFO 11988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-17 15:15:03.782  INFO 11988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-17 15:15:04.752  INFO 11988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-17 15:15:04.789  INFO 11988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-17 15:15:06.092  WARN 11988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-17 15:15:06.235  WARN 11988 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-17 15:15:06.309  INFO 11988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-17 15:15:06.324  INFO 11988 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 7.704 seconds (JVM running for 9.603)
+2021-06-17 15:15:06.325  INFO 11988 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-17 15:15:06.326  INFO 11988 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-17 15:15:06.586  INFO 11988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-17 15:15:06.586  INFO 11988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-17 15:15:06.587  INFO 11988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-17 15:15:06.603  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/', ip='127.0.0.1', classMethod='com.xupt.demo.controller.StartController.index', args=[]}
+2021-06-17 15:15:06.606  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="index"; model=null]
+2021-06-17 15:15:07.489  INFO 11988 --- [http-nio-8080-exec-2] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='127.0.0.1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@52be34e7, org.apache.catalina.connector.ResponseFacade@5c92a9fa]}
+2021-06-17 15:15:07.980  INFO 11988 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@20197e2c, org.apache.catalina.connector.ResponseFacade@651be44b]}
+2021-06-17 15:15:08.471  INFO 11988 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-17 15:15:08.471  INFO 11988 --- [http-nio-8080-exec-2] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-17 16:45:35.773  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/user/userLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.LoginController.userLogin', args=[admin, 1234, 347f, org.apache.catalina.session.StandardSessionFacade@1ff16186, {}, org.apache.catalina.connector.RequestFacade@52be34e7]}
+2021-06-17 16:45:36.148 ERROR 11988 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.xupt.demo.controller.LoginController.userLogin(LoginController.java:92)
+	at com.xupt.demo.controller.LoginController$$FastClassBySpringCGLIB$$6527047e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.xupt.demo.controller.LoginController$$EnhancerBySpringCGLIB$$b2a1db72.userLogin(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-06-17 16:45:36.156  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.StartController.index', args=[]}
+2021-06-17 16:45:36.156  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="index"; model=null]
+2021-06-17 16:45:36.268  INFO 11988 --- [http-nio-8080-exec-10] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@52be34e7, org.apache.catalina.connector.ResponseFacade@5c92a9fa]}
+2021-06-17 16:45:36.275  INFO 11988 --- [http-nio-8080-exec-10] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-17 16:45:42.934  INFO 11988 --- [http-nio-8080-exec-5] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@52be34e7, org.apache.catalina.connector.ResponseFacade@5c92a9fa]}
+2021-06-17 16:45:43.098  INFO 11988 --- [http-nio-8080-exec-5] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-17 16:45:51.786  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/user/userLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.LoginController.userLogin', args=[admin, 1234, n2n6, org.apache.catalina.session.StandardSessionFacade@1ff16186, {}, org.apache.catalina.connector.RequestFacade@52be34e7]}
+2021-06-17 16:45:51.788  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="redirect:/admin/showStudentList"; model=null]
+2021-06-17 16:45:51.922  INFO 11988 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/showStudentList', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.showStudentList', args=[{}, 0, 10]}
+2021-06-17 16:45:52.060  INFO 11988 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/menuToAdmin"; model={students={studentsPage=Page 1 of 4 containing com.xupt.demo.entity.Students instances, studentsList=[王麻子, 关昌隆, 王永鑫, 梁博森, 王佳伟, 张磊, 康澎湃, 胡云飞, 张三, 潘怡然, 沈博轩, 张嘉琪, 李静宜, 钱璞玉, 王润迎, 成笑莹, 成欣宇, 范佳伟, 贾家源, 李浩, 俱文, 梁珂伟, 刘璇, 刘宇阳, 苗欢欢, 齐苏豫, 王梦华, 王明亮, 张若鹏, 徐卓龙, 陈春晗, 弥济时, 念靖渊], title=管理员菜单}}]
+2021-06-17 16:45:54.959  INFO 11988 --- [http-nio-8080-exec-5] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/returnClassName', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.returnClassName', args=[{}, org.apache.catalina.connector.RequestFacade@34950f37]}
+2021-06-17 16:45:54.998  INFO 11988 --- [http-nio-8080-exec-5] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/addStudentToAdmin"; model={classList=[软件1901, 软件1903, 软件1904, 软件1905, 软件1906, 计科1901, 计科1902, 网络1901, 网络1902, 大数据1901, 大数据1902], title=管理员菜单}]
+2021-06-17 16:45:56.334  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/showStudentList', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.showStudentList', args=[{}, 0, 10]}
+2021-06-17 16:45:56.341  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/menuToAdmin"; model={students={studentsPage=Page 1 of 4 containing com.xupt.demo.entity.Students instances, studentsList=[王麻子, 关昌隆, 王永鑫, 梁博森, 王佳伟, 张磊, 康澎湃, 胡云飞, 张三, 潘怡然, 沈博轩, 张嘉琪, 李静宜, 钱璞玉, 王润迎, 成笑莹, 成欣宇, 范佳伟, 贾家源, 李浩, 俱文, 梁珂伟, 刘璇, 刘宇阳, 苗欢欢, 齐苏豫, 王梦华, 王明亮, 张若鹏, 徐卓龙, 陈春晗, 弥济时, 念靖渊], title=管理员菜单}}]
+2021-06-17 16:46:52.213  INFO 11988 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/findStudentByName', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.findStudentByName', args=[{}, 小灰灰]}
+2021-06-17 16:46:52.215  INFO 11988 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/searchStudentToAdmin"; model={students={studentsList=[], title=管理员菜单}}]
+2021-06-17 16:46:55.274  INFO 11988 --- [http-nio-8080-exec-3] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/findStudentByName', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.findStudentByName', args=[{}, 胡云飞]}
+2021-06-17 16:46:55.275  INFO 11988 --- [http-nio-8080-exec-3] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/searchStudentToAdmin"; model={students={studentsList=[Students(id=231, name=胡云飞, className=软件1901, password=123456, sex=男)], title=管理员菜单}}]
+2021-06-17 16:53:04.706  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/returnClassName', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.returnClassName', args=[{}, org.apache.catalina.connector.RequestFacade@34950f37]}
+2021-06-17 16:53:04.708  INFO 11988 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/addStudentToAdmin"; model={classList=[软件1901, 软件1903, 软件1904, 软件1905, 软件1906, 计科1901, 计科1902, 网络1901, 网络1902, 大数据1901, 大数据1902], title=管理员菜单}]
+2021-06-17 17:00:40.554  INFO 11988 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/showStudentList', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.showStudentList', args=[{}, 0, 10]}
+2021-06-17 17:00:40.563  INFO 11988 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/menuToAdmin"; model={students={studentsPage=Page 1 of 4 containing com.xupt.demo.entity.Students instances, studentsList=[王麻子, 关昌隆, 王永鑫, 梁博森, 王佳伟, 张磊, 康澎湃, 胡云飞, 张三, 潘怡然, 沈博轩, 张嘉琪, 李静宜, 钱璞玉, 王润迎, 成笑莹, 成欣宇, 范佳伟, 贾家源, 李浩, 俱文, 梁珂伟, 刘璇, 刘宇阳, 苗欢欢, 齐苏豫, 王梦华, 王明亮, 张若鹏, 徐卓龙, 陈春晗, 弥济时, 念靖渊], title=管理员菜单}}]
+2021-06-17 17:00:46.564  INFO 11988 --- [http-nio-8080-exec-8] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/modifyStudentToPage', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.modifyStudentToPage', args=[关昌隆, 软件1901, 保密, 123456]}
+2021-06-17 17:00:46.566  INFO 11988 --- [http-nio-8080-exec-8] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/modifyStudentToAdmin"; model={name=关昌隆, className=软件1901, sex=保密, password=123456, classList=[软件1901, 软件1903, 软件1904, 软件1905, 软件1906, 计科1901, 计科1902, 网络1901, 网络1902, 大数据1901, 大数据1902], title=管理员菜单}]
+2021-06-17 23:51:20.598  INFO 24336 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 24336 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-17 23:51:20.599 DEBUG 24336 --- [main] com.xupt.demo.DemoApplication            : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-06-17 23:51:20.599  INFO 24336 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-17 23:51:22.196  INFO 24336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-17 23:51:22.268  INFO 24336 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 7 JPA repository interfaces.
+2021-06-17 23:51:22.869  INFO 24336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-17 23:51:22.877  INFO 24336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-17 23:51:22.877  INFO 24336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-17 23:51:23.109  INFO 24336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-17 23:51:23.109  INFO 24336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2459 ms
+2021-06-17 23:51:23.385  INFO 24336 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-17 23:51:23.497  INFO 24336 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-17 23:51:23.812  INFO 24336 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-17 23:51:23.916  INFO 24336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-17 23:51:24.110  INFO 24336 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-17 23:51:24.144  INFO 24336 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-17 23:51:25.205  INFO 24336 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-17 23:51:25.214  INFO 24336 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-17 23:51:26.279  WARN 24336 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-17 23:51:26.424  WARN 24336 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-17 23:51:26.522  INFO 24336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-17 23:51:26.536  INFO 24336 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 6.748 seconds (JVM running for 8.138)
+2021-06-17 23:51:26.537  INFO 24336 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-17 23:51:26.538  INFO 24336 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-17 23:51:33.486  INFO 24336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-17 23:51:33.486  INFO 24336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-17 23:51:33.488  INFO 24336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-06-17 23:51:33.514  INFO 24336 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.StartController.index', args=[]}
+2021-06-17 23:51:33.517  INFO 24336 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="index"; model=null]
+2021-06-17 23:51:34.320  INFO 24336 --- [http-nio-8080-exec-6] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@7d0c8df1, org.apache.catalina.connector.ResponseFacade@2c3fe79]}
+2021-06-17 23:51:34.756  INFO 24336 --- [http-nio-8080-exec-6] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-17 23:51:44.547  INFO 24336 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Request : {url='/user/userLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.LoginController.userLogin', args=[admin, 1234, d2pw, org.apache.catalina.session.StandardSessionFacade@64f8705b, {}, org.apache.catalina.connector.RequestFacade@7d0c8df1]}
+2021-06-17 23:51:44.822  INFO 24336 --- [http-nio-8080-exec-9] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="index"; model={info=验证码错误,请再输一次!}]
+2021-06-17 23:51:44.912  INFO 24336 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@7d0c8df1, org.apache.catalina.connector.ResponseFacade@2c3fe79]}
+2021-06-17 23:51:44.922  INFO 24336 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Result：null

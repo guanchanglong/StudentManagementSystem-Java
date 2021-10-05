@@ -1,0 +1,36 @@
+/*设置链接文字颜色，取消下划线*/
+a, a:hover, a:focus{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/*设置右部导航条背景色、宽度、高度*/
+.panel-group {
+    background-color: #438EB9;
+    margin-top:5px;
+}
+/*设置导航条二级标题背景色、取消边框*/
+.panel-group .panel {
+    background-color: #438EB9;
+    border: none;
+}
+/*设置导航条一级标题文字颜色、背景色*/
+.panel-default>.panel-heading {
+    border: none;
+    color: #FFFFFF;
+    background-color: #62A8D1;
+}
+/*设置导航条二级标题取消边框、标题间隔为0*/
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+.panel-body {
+    padding: 0px 0px;
+}
+.nav {
+    margin-left: 0px;
+}
+/*设置选中二级标题背景色*/
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #336699;
+}
+

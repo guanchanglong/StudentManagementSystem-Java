@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--设置上下文名称-->
+    <!--每个logger都关联到logger上下文，默认上下文名称为“default”。但可以使用设置成其他名字，用于区分不同应用程序的记录。-->
+    <!--一旦设置，不能修改,可以通过%contextName来打印日志上下文名称。-->
+    <!--<contextName>logback</contextName>-->
+
+
+    <!--包含Spring boot对logback日志的默认配置-->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+
+    <!--设置变量-->
+    <!--用来定义变量值的标签， 有两个属性，name和value；其中name的值是变量的名称，value的值时变量定义的值。-->
+    <!--通过定义的值会被插入到logger上下文中。定义变量后，可以使“${}”来使用变量。-->
+    <property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <!-- appender用来格式化日志输出节点，有两个属性name和class，-->
+    <!-- class用来指定哪种输出策略，常用就是控制台输出策略和文件输出策略。-->
+    <!--重写了Spring Boot框架 org/springframework/boot/logging/logback/file-appender.xml 配置-->
+    <appender name="TIME_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--encoder表示对日志进行编码-->
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+
+        <file>${LOG_FILE}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志名字-->
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <!--保留历史日志一个月的时间，超过一个月之后会把之前超过一个月的一些日志文件给删除掉-->
+            <maxHistory>30</maxHistory>
+            <!--
+            Spring Boot默认情况下，日志文件10M时，会切分日志文件,这样设置日志文件会在100M时切分日志
+            -->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+        </rollingPolicy>
+    </appender>
+
+    <!--日志的级别-->
+    <!--root节点是必选节点，用来指定最基础的日志输出级别，只有一个level属性。-->
+    <root level="INFO">
+        <!--日志输出的方式，CONSOLE是在控制台输出，TIME_FILE是输出到日志文件-->
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="TIME_FILE" />
+    </root>
+
+</configuration>
+
+        <!--
+            1、继承Spring boot logback设置（可以在appliaction.yml或者application.properties设置logging.*属性）
+            2、重写了默认配置，设置日志文件大小在100MB时，按日期切分日志，切分后目录：
+
+                blog.2017-08-01.0   80MB
+                blog.2017-08-01.1   10MB
+                blog.2017-08-02.0   56MB
+                blog.2017-08-03.0   53MB
+                ......
+        -->

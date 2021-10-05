@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="431e6b99-3568-4ad6-8ec0-4df763142bc5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mybatis-config" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven\apache-maven-3.6.3-bin\repository" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1tLEtqRO4WSTELnmjD1h23yz3CA" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.425" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaSwing\demo6\src\main\resources\images" />
+      <recent name="D:\JavaSwing\demo6\src\main\resources" />
+      <recent name="D:\JavaSwing\demo6\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LoginFrm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.view.LoginFrm" />
+      <module name="demo6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginFrm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="431e6b99-3568-4ad6-8ec0-4df763142bc5" name="Default Changelist" comment="" />
+      <created>1622540188096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622540188096</updated>
+      <workItem from="1622540189465" duration="9680000" />
+      <workItem from="1622592583903" duration="31118000" />
+      <workItem from="1622679593010" duration="12532000" />
+      <workItem from="1622693355319" duration="5318000" />
+      <workItem from="1622765661317" duration="2843000" />
+      <workItem from="1622776476145" duration="4793000" />
+      <workItem from="1622874755290" duration="2746000" />
+      <workItem from="1622950353889" duration="3585000" />
+      <workItem from="1623025207219" duration="5305000" />
+      <workItem from="1623110598964" duration="4912000" />
+      <workItem from="1623197059068" duration="3206000" />
+      <workItem from="1623234077866" duration="1210000" />
+      <workItem from="1623284108743" duration="9362000" />
+      <workItem from="1623370926109" duration="3456000" />
+      <workItem from="1623763184618" duration="3827000" />
+      <workItem from="1623843190161" duration="3511000" />
+      <workItem from="1623938080425" duration="3009000" />
+      <workItem from="1623992187460" duration="2824000" />
+      <workItem from="1624077902661" duration="916000" />
+      <workItem from="1624165257263" duration="694000" />
+      <workItem from="1624275463444" duration="1298000" />
+      <workItem from="1624361459980" duration="1644000" />
+      <workItem from="1627050819135" duration="1711000" />
+      <workItem from="1627086495435" duration="1213000" />
+      <workItem from="1629228747277" duration="605000" />
+      <workItem from="1633402204698" duration="1203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

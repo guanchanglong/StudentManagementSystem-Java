@@ -1,0 +1,233 @@
+2021-06-06 13:47:27.467  INFO 24248 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 24248 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:47:27.468  INFO 24248 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:47:28.516  INFO 24248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:47:28.531  INFO 24248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:47:29.262  INFO 24248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:47:29.272  INFO 24248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:47:29.272  INFO 24248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:47:29.375  INFO 24248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:47:29.375  INFO 24248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1812 ms
+2021-06-06 13:47:29.550  INFO 24248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:47:29.714  INFO 24248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:47:29.745  INFO 24248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:47:29.774  INFO 24248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:47:30.039  INFO 24248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:47:30.108  INFO 24248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:47:30.214  INFO 24248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:47:30.221  INFO 24248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:47:30.711  WARN 24248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:47:30.833  WARN 24248 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:47:30.882  INFO 24248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:47:30.889  INFO 24248 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 4.006 seconds (JVM running for 5.326)
+2021-06-06 13:47:30.889  INFO 24248 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:47:30.890  INFO 24248 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:47:39.984  INFO 24248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:47:39.984  INFO 24248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:47:39.985  INFO 24248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 13:47:43.221  WARN 24248 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:45.475  WARN 24248 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:46.043  WARN 24248 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:46.485  WARN 24248 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:46.891  WARN 24248 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:47.268  WARN 24248 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:47.606  WARN 24248 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:47.813  WARN 24248 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:47.971  WARN 24248 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:48.120  WARN 24248 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:48.268  WARN 24248 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:48.403  WARN 24248 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:48.563  WARN 24248 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:47:48.775  WARN 24248 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:48:44.460  WARN 24248 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /users/register
+2021-06-06 13:48:45.221  WARN 24248 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /users/register
+2021-06-06 13:48:46.110  WARN 24248 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:49:21.852  WARN 24248 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:49:22.795  WARN 24248 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:49:23.498  WARN 24248 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:49:24.187  WARN 24248 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:51:16.510  INFO 23080 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 23080 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:51:16.512  INFO 23080 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:51:16.958  INFO 23080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:51:16.972  INFO 23080 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:51:17.408  INFO 23080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:51:17.413  INFO 23080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:51:17.414  INFO 23080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:51:17.479  INFO 23080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:51:17.479  INFO 23080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 935 ms
+2021-06-06 13:51:17.573  INFO 23080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:51:17.683  INFO 23080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:51:17.711  INFO 23080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:51:17.738  INFO 23080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:51:17.812  INFO 23080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:51:17.883  INFO 23080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:51:17.989  INFO 23080 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:51:17.996  INFO 23080 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:51:18.381  WARN 23080 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:51:18.503  WARN 23080 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:51:18.548  INFO 23080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:51:18.556  INFO 23080 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.406 seconds (JVM running for 3.048)
+2021-06-06 13:51:18.556  INFO 23080 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:51:18.557  INFO 23080 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:51:35.622  INFO 14440 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 14440 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:51:35.624  INFO 14440 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:51:36.064  INFO 14440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:51:36.078  INFO 14440 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:51:36.503  INFO 14440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:51:36.508  INFO 14440 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:51:36.509  INFO 14440 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:51:36.570  INFO 14440 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:51:36.570  INFO 14440 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 920 ms
+2021-06-06 13:51:36.663  INFO 14440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:51:36.781  INFO 14440 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:51:36.809  INFO 14440 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:51:36.835  INFO 14440 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:51:36.904  INFO 14440 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:51:36.969  INFO 14440 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:51:37.070  INFO 14440 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:51:37.077  INFO 14440 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:51:37.427  WARN 14440 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:51:37.541  WARN 14440 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:51:37.585  INFO 14440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:51:37.591  INFO 14440 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.316 seconds (JVM running for 2.961)
+2021-06-06 13:51:37.592  INFO 14440 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:51:37.593  INFO 14440 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:51:41.138  INFO 14440 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:51:41.139  INFO 14440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:51:41.140  INFO 14440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 13:51:41.147  WARN 14440 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /users/login
+2021-06-06 13:52:19.836  INFO 6264 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 6264 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:52:19.838  INFO 6264 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:52:20.276  INFO 6264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:52:20.297  INFO 6264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:52:20.724  INFO 6264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:52:20.729  INFO 6264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:52:20.729  INFO 6264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:52:20.791  INFO 6264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:52:20.792  INFO 6264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 924 ms
+2021-06-06 13:52:20.886  INFO 6264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:52:20.996  INFO 6264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:52:21.024  INFO 6264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:52:21.050  INFO 6264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:52:21.124  INFO 6264 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:52:21.189  INFO 6264 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:52:21.291  INFO 6264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:52:21.299  INFO 6264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:52:21.660  WARN 6264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:52:21.778  WARN 6264 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:52:21.821  INFO 6264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:52:21.828  INFO 6264 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.339 seconds (JVM running for 2.977)
+2021-06-06 13:52:21.828  INFO 6264 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:52:21.829  INFO 6264 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:52:24.827  INFO 6264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:52:24.827  INFO 6264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:52:24.828  INFO 6264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 13:52:24.852  WARN 6264 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2021-06-06 13:52:31.730  WARN 6264 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'username' for method parameter type String is not present]
+2021-06-06 13:53:27.264  INFO 24736 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 24736 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:53:27.265  INFO 24736 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:53:27.711  INFO 24736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:53:27.724  INFO 24736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:53:28.151  INFO 24736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:53:28.155  INFO 24736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:53:28.156  INFO 24736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:53:28.219  INFO 24736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:53:28.219  INFO 24736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 925 ms
+2021-06-06 13:53:28.312  INFO 24736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:53:28.421  INFO 24736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:53:28.449  INFO 24736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:53:28.477  INFO 24736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:53:28.547  INFO 24736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:53:28.612  INFO 24736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:53:28.715  INFO 24736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:53:28.722  INFO 24736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:53:29.081  WARN 24736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:53:29.202  WARN 24736 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:53:29.247  INFO 24736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:53:29.254  INFO 24736 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.343 seconds (JVM running for 2.984)
+2021-06-06 13:53:29.254  INFO 24736 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:53:29.255  INFO 24736 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:53:35.713  INFO 24736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:53:35.714  INFO 24736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:53:35.714  INFO 24736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-06-06 13:55:19.047  INFO 1004 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 1004 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:55:19.049  INFO 1004 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:55:19.518  INFO 1004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:55:19.533  INFO 1004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:55:19.980  INFO 1004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:55:19.986  INFO 1004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:55:19.986  INFO 1004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:55:20.049  INFO 1004 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:55:20.049  INFO 1004 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
+2021-06-06 13:55:20.144  INFO 1004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:55:20.266  INFO 1004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:55:20.297  INFO 1004 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:55:20.327  INFO 1004 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:55:20.403  INFO 1004 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:55:20.473  INFO 1004 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:55:20.589  INFO 1004 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:55:20.597  INFO 1004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:55:20.990  WARN 1004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:55:21.119  WARN 1004 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:55:21.166  INFO 1004 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:55:21.173  INFO 1004 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.534 seconds (JVM running for 3.47)
+2021-06-06 13:55:21.174  INFO 1004 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:55:21.175  INFO 1004 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:55:25.369  INFO 1004 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:55:25.369  INFO 1004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:55:25.370  INFO 1004 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 13:55:40.559  WARN 1004 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /users/userLogin
+2021-06-06 13:56:53.140  INFO 33732 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 33732 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 13:56:53.142  INFO 33732 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 13:56:53.611  INFO 33732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 13:56:53.625  INFO 33732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-06-06 13:56:54.050  INFO 33732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 13:56:54.056  INFO 33732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 13:56:54.056  INFO 33732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 13:56:54.118  INFO 33732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 13:56:54.119  INFO 33732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 946 ms
+2021-06-06 13:56:54.213  INFO 33732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 13:56:54.323  INFO 33732 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 13:56:54.351  INFO 33732 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 13:56:54.377  INFO 33732 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 13:56:54.449  INFO 33732 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 13:56:54.514  INFO 33732 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 13:56:54.616  INFO 33732 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 13:56:54.623  INFO 33732 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 13:56:55.007  WARN 33732 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 13:56:55.126  WARN 33732 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 13:56:55.170  INFO 33732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 13:56:55.177  INFO 33732 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.389 seconds (JVM running for 3.163)
+2021-06-06 13:56:55.177  INFO 33732 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 13:56:55.178  INFO 33732 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 13:56:59.356  INFO 33732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 13:56:59.356  INFO 33732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 13:56:59.357  INFO 33732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 13:56:59.365  WARN 33732 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /users/userLogin
+2021-06-06 14:00:50.691  INFO 31156 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 31156 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-06 14:00:50.693  INFO 31156 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-06 14:00:51.169  INFO 31156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-06 14:00:51.183  INFO 31156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-06-06 14:00:51.609  INFO 31156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-06 14:00:51.615  INFO 31156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-06 14:00:51.615  INFO 31156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-06 14:00:51.682  INFO 31156 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-06 14:00:51.682  INFO 31156 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
+2021-06-06 14:00:51.775  INFO 31156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-06 14:00:51.881  INFO 31156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-06 14:00:51.909  INFO 31156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-06 14:00:51.935  INFO 31156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-06 14:00:52.007  INFO 31156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-06 14:00:52.073  INFO 31156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-06 14:00:52.178  INFO 31156 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-06 14:00:52.185  INFO 31156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-06 14:00:52.546  WARN 31156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-06 14:00:52.665  WARN 31156 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-06 14:00:52.710  INFO 31156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-06 14:00:52.717  INFO 31156 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 2.373 seconds (JVM running for 3.022)
+2021-06-06 14:00:52.717  INFO 31156 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-06 14:00:52.718  INFO 31156 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-06 14:00:58.342  INFO 31156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-06 14:00:58.342  INFO 31156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-06 14:00:58.343  INFO 31156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-06 14:02:41.927  WARN 31156 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /user/register
+2021-06-06 14:02:41.968  WARN 31156 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico

@@ -1,0 +1,40 @@
+2021-06-18 13:02:06.397  INFO 15676 --- [main] com.xupt.demo.DemoApplication            : Starting DemoApplication using Java 1.8.0_152 on 小关同学 with PID 15676 (D:\JavaSwing\demoWeb\target\classes started by 关昌隆 in D:\JavaSwing\demoWeb)
+2021-06-18 13:02:06.401 DEBUG 15676 --- [main] com.xupt.demo.DemoApplication            : Running with Spring Boot v2.5.0, Spring v5.3.7
+2021-06-18 13:02:06.401  INFO 15676 --- [main] com.xupt.demo.DemoApplication            : The following profiles are active: dev
+2021-06-18 13:02:08.375  INFO 15676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-18 13:02:08.467  INFO 15676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 7 JPA repository interfaces.
+2021-06-18 13:02:09.204  INFO 15676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-18 13:02:09.211  INFO 15676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-18 13:02:09.211  INFO 15676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-18 13:02:09.473  INFO 15676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-18 13:02:09.473  INFO 15676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3024 ms
+2021-06-18 13:02:09.707  INFO 15676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-18 13:02:09.793  INFO 15676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-18 13:02:10.088  INFO 15676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-18 13:02:10.215  INFO 15676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-18 13:02:10.461  INFO 15676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-18 13:02:10.484  INFO 15676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-18 13:02:11.243  INFO 15676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-18 13:02:11.251  INFO 15676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-18 13:02:12.328  WARN 15676 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-18 13:02:12.462  WARN 15676 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Unknown Template Mode 'UTF-8'. Must be one of: 'HTML', 'XML', 'TEXT', 'JAVASCRIPT', 'CSS', 'RAW'. Using default Template Mode 'HTML'.
+2021-06-18 13:02:12.530  INFO 15676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-18 13:02:12.537  INFO 15676 --- [main] com.xupt.demo.DemoApplication            : Started DemoApplication in 7.008 seconds (JVM running for 10.431)
+2021-06-18 13:02:12.538  INFO 15676 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-18 13:02:12.539  INFO 15676 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-18 13:02:26.036  INFO 15676 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-18 13:02:26.037  INFO 15676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-18 13:02:26.037  INFO 15676 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-06-18 13:02:26.054  INFO 15676 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Request : {url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.StartController.index', args=[]}
+2021-06-18 13:02:26.057  INFO 15676 --- [http-nio-8080-exec-1] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="index"; model=null]
+2021-06-18 13:02:26.653  INFO 15676 --- [http-nio-8080-exec-8] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@291c2bde, org.apache.catalina.connector.ResponseFacade@8ff5cb0]}
+2021-06-18 13:02:27.434  INFO 15676 --- [http-nio-8080-exec-8] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-18 13:02:27.435  INFO 15676 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Request : {url='/defaultKaptcha', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.CodeController.defaultKaptcha', args=[org.apache.catalina.connector.RequestFacade@291c2bde, org.apache.catalina.connector.ResponseFacade@8ff5cb0]}
+2021-06-18 13:02:27.448  INFO 15676 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Result：null
+2021-06-18 13:02:36.525  INFO 15676 --- [http-nio-8080-exec-4] com.xupt.demo.aspect.LogAspect           : Request : {url='/user/userLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.LoginController.userLogin', args=[admin, 1234, gcbf, org.apache.catalina.session.StandardSessionFacade@4eb48ba1, {}, org.apache.catalina.connector.RequestFacade@291c2bde]}
+2021-06-18 13:02:36.712  INFO 15676 --- [http-nio-8080-exec-4] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="redirect:/admin/showStudentList"; model=null]
+2021-06-18 13:02:36.735  INFO 15676 --- [http-nio-8080-exec-10] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/showStudentList', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.showStudentList', args=[{}, 0, 10]}
+2021-06-18 13:02:36.837  INFO 15676 --- [http-nio-8080-exec-10] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/menuToAdmin"; model={students={studentsPage=Page 1 of 4 containing com.xupt.demo.entity.Students instances, studentsList=[王麻子, 关昌隆, 王永鑫, 梁博森, 王佳伟, 张磊, 康澎湃, 胡云飞, 张三, 潘怡然, 沈博轩, 张嘉琪, 李静宜, 钱璞玉, 王润迎, 成笑莹, 成欣宇, 范佳伟, 贾家源, 李浩, 俱文, 梁珂伟, 刘璇, 刘宇阳, 苗欢欢, 齐苏豫, 王梦华, 王明亮, 张若鹏, 徐卓龙, 陈春晗, 弥济时, 念靖渊], title=管理员菜单}}]
+2021-06-18 13:02:43.588  INFO 15676 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Request : {url='/admin/modifyStudentToPage', ip='0:0:0:0:0:0:0:1', classMethod='com.xupt.demo.controller.AdminController.modifyStudentToPage', args=[关昌隆, 软件1901, 保密, 123456]}
+2021-06-18 13:02:43.633  INFO 15676 --- [http-nio-8080-exec-7] com.xupt.demo.aspect.LogAspect           : Result：ModelAndView [view="admin/modifyStudentToAdmin"; model={name=关昌隆, className=软件1901, sex=保密, password=123456, classList=[软件1901, 软件1903, 软件1904, 软件1905, 软件1906, 计科1901, 计科1902, 网络1901, 网络1902, 大数据1901, 大数据1902], title=管理员菜单}]
+2021-06-18 17:24:39.183  WARN 15676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m58s457ms960µs).

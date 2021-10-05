@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/ace.min.css" />
+    <link rel="stylesheet" href="../../static/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../static/css/studioCss.css"/>
+    <script src="../../static/js/jquery-2.1.3.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../static/favicon.ico" th:href="@{/static/favicon.ico}"/>
+    <link rel="bookmark" href="../../static/favicon.ico" th:href="@{/static/favicon.ico}" type="image/x-icon"/>
+    <script>
+        function checkEmpty(){
+            var name=document.getElementsByName("studentName");
+            var password=document.getElementsByName("studentPassword");
+            for(var j=0;j<name.length;j++){
+                if(isEmpty(name[j].value)){
+                    alert("学生姓名不能为空！！！");
+                    return false;
+                }
+                if (isEmpty(password[j].value)){
+                    alert("登录密码不能为空！！！");
+                    return false;
+                }
+            }
+            return true;
+        }
+        function isEmpty(val) {
+            if (typeof(val) == 'number') {
+                val += '';
+            }
+            var str = val || '';
+            return $.trim(str).length == 0;
+        }
+
+        function clearInput(){
+            $('div input').val('')
+        }
+    </script>
+</head>
+
+<body>
+
+<!-- 上部banner -->
+<div id="navbar" class="navbar">
+    <div class="navbar-container ace-save-state" id="navbar-container">
+        <!-- 左边标题 -->
+        <div class="navbar-header pull-left">
+            <a href="../index.html" th:href="@{../menu/index}" class="navbar-brand">
+                <small>
+                    <img src="../../static/favicon.ico">&nbsp;&nbsp;学生管理系统
+                </small>
+            </a>
+        </div>
+
+        <!-- 右边个人设置 -->
+        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+                <li class="light-blue dropdown-modal">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="../../static/images/teacher.png"/>
+                        <span class="user-info">欢迎,<br>老师</span>
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                        <li><a href="modifyPasswordToTeacher.html" th:href="@{/teacher/toModifyPasswordPage}"><i class="ace-icon fa fa-cog"></i>修改密码</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../index.html" th:href="@{/user/outLogin}"><i class="ace-icon fa fa-power-off"></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 下部内容 -->
+<div class="row">
+
+    <!-- 左导航栏 -->
+    <div class="col-md-2">
+        <div class="panel-group" id="panelContainer">
+            <!-- 导航栏1 -->
+            <div class="panel panel-default">
+                <!-- 加入data-toggle="collapse"后可点击折叠 -->
+                <div id="header1" class="panel-heading" data-toggle="collapse" data-target="#sub1" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-leaf"></i>
+                    <a href="#">学生管理</a>
+                    <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                </div>
+                <div id="sub1" class="collapse panel-collapse collapse panel-collapse in">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li>
+                                <a id="linkstudio" href="menuToTeacher.html" th:href="@{/teacher/showStudentList}" style="padding-left:30px;background-color: #336699">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>学生列表
+                                </a>
+                            </li>
+                            <li>
+                                <a id="linksched" href="addStudentToAdmin.html" th:href="@{/teacher/returnClassName}" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>学生添加
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏2 -->
+            <div class="panel panel-default">
+                <!-- 加入data-toggle="collapse"后可点击折叠 -->
+                <div id="header2" class="panel-heading" data-toggle="collapse" data-target="#sub2" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <a href="#">班级管理</a>
+                    <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                </div>
+                <div id="sub2" class="collapse panel-collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li>
+                                <a id="linkcustomer" href="showClassToTeacher.html" th:href="@{/teacher/showClassList}" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>班级列表
+                                </a>
+                            </li>
+                            <li>
+                                <a id="linkemp" href="addClassToTeacher.html" th:href="@{/teacher/addClassToPage}" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>班级添加
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏3 -->
+            <div class="panel panel-default">
+                <!-- 加入data-toggle="collapse"后可点击折叠 -->
+                <div id="header3" class="panel-heading" data-toggle="collapse" data-target="#sub3" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                    <a href="#">教师管理</a>
+                    <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                </div>
+                <div id="sub3" class="collapse panel-collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li>
+                                <a id="linksale" href="#" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>教师列表
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏4 -->
+            <div class="panel panel-default">
+                <!-- 加入data-toggle="collapse"后可点击折叠 -->
+                <div id="header4" class="panel-heading" data-toggle="collapse" data-target="#sub4" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                    <a href="#">课程管理</a>
+                    <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                </div>
+                <div id="sub4" class="collapse panel-collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li>
+                                <a id="linksaleachi" href="#" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>课程列表
+                                </a>
+                            </li>
+                            <li>
+                                <a id="linksaleticket" href="#" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>添加课程
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏5 -->
+            <div class="panel panel-default">
+                <!-- 加入data-toggle="collapse"后可点击折叠 -->
+                <div id="header5" class="panel-heading" data-toggle="collapse" data-target="#sub5" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                    <a href="#">选课管理</a>
+                    <span class="glyphicon glyphicon-triangle-right pull-right"></span>
+                </div>
+                <div id="sub5" class="collapse panel-collapse">
+                    <div class="panel-body">
+                        <ul class="nav">
+                            <li>
+                                <a id="linkresource" href="#" style="padding-left:30px;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>选课管理
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--右侧主体部分-->
+    <div class="col-md-9" style="margin-left:5px;">
+        <div style="margin:5px 0px 10px 0px;">学生管理 > 修改学生信息</div>
+        <hr>
+
+        <form id="myform" class="form-horizontal" role="form" action="/teacher/modifyStudent" method="post" onsubmit="return checkEmpty()">
+            <input type="hidden" name="oldName" th:value="${name}">
+            <input type="hidden" name="oldClassName" th:value="${className}">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">学生姓名：</label>
+                <div class="col-sm-6">
+                    <div class="field">
+                        <input name="studentName" type="text" class="form-control" placeholder="请输入学生姓名" th:if="${name}" th:value="${name}">
+                        <input name="studentName" type="text" class="form-control" placeholder="请输入学生姓名" th:unless="${name}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">所属班级：</label>
+                <div class="col-sm-6">
+                    <select name="className">
+                        <option th:each="class:${classList}" th:if="${class ne className}" th:value="${class}" th:text="${class}"></option>
+                        <option th:each="class:${classList}" th:if="${class eq className}" selected th:value="${class}" th:text="${class}"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">登录密码：</label>
+                <div class="col-sm-6">
+                    <div class="field">
+                        <input name="studentPassword" type="text" class="form-control" placeholder="请输入学生登录密码" th:if="${password}" th:value="${password}">
+                        <input name="studentPassword" type="text" class="form-control" placeholder="请输入学生登录密码" th:unless="${password}">
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">学生性别：</label>
+                <div class="col-sm-6">
+                    <select name="sex" th:if="${sex eq '男'}">
+                        <option value="男" selected>男</option>
+                        <option value="女">女</option>
+                        <option value="保密">保密</option>
+                    </select>
+                    <select name="sex" th:if="${sex eq '女'}">
+                        <option value="男">男</option>
+                        <option value="女" selected>女</option>
+                        <option value="保密">保密</option>
+                    </select>
+                    <select name="sex" th:if="${sex eq '保密'}">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                        <option value="保密" selected>保密</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 control-label"
+                     style="color: red; font-weight: bold;"></div>
+                <div class="col-sm-6">
+                    <br>
+                    <h4 th:text="${fail}" style="color: red"></h4>
+                    <h4 th:text="${success}" style="color: green"></h4>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="btn btn-primary">提 交</button>
+                    <button type="button" class="btn btn-warning" onclick="clearInput()">重置</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
